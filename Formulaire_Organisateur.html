@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name= "viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	</head>
+	
+	<body>
+		<div id="block" class="center-block" style="margin:50px;border:5px solid red;">
+					<h1><span class="glyphicon glyphicon-user"></span> FORMULAIRE Organisateur <span class="glyphicon glyphicon-road"></span></h1>
+		</div>	
+		<div class ="container">
+			<div class="row">
+				<form>
+					<div class="form-group">
+						<label class="form-inline" for="name">Nom de l'évènement</label><br>
+						<input type="text" id "name" class "form-control">
+					</div>
+					<div class="form-group">
+						<label class="form-inline" for="name">Nom de l'organisateur</label><br>
+						<input type="text" id "name" class "form-control">
+					</div>
+					<div class="form-group">
+						<label class="form-inline" for="surname">Prénom de l'organisateur</label><br>
+						<input type="text" id "surname" class "form-control">
+					</div>
+					<div class="form-group">
+						<label for="email">Votre Email</label><br>
+						<input type="text" id "email" class "form-control">
+					</div>
+					<div class="form-group">
+						<label for="numéro">Votre numéro de téléphone</label><br>
+						<input type="text" id "numéro" class "form-control">
+					</div>
+					<div class="form-group">
+						<label for="adressedepart">Adresse de l'évènement</label><br>
+						<input type="text" id "adressedepart" class "form-control">
+					</div>
+					<div class="form-group">
+						<label for="jourdepart">Jour de l'évènement</label><br>
+						<div class='input-group date' id='datetimepicker1'>
+							<input type='text' class="form-control" />
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-calendar"></span>
+							</span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="heuredepart">Heure de début</label><br>
+						<div class='input-group date' id='datetimepicker1'>
+						<input type='text' class="form-control" />
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-time"></span>
+							</span>
+					</div>
+						<div class="form-group">
+						<label for="heuredepart">Heure de fin</label><br>
+						<div class='input-group date' id='datetimepicker1'>
+						<input type='text' class="form-control" />
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-time"></span>
+							</span>
+					</div>
+					<div class="radio">
+						<div>Je souhaite être informé par mail dès qu'il y a un nouveau driver pour mon évènement:</div>
+						<label> <input type="radio" value="">OUI</label>
+						<label> <input type="radio" value="">NON</label>
+					</div>
+					<div class="radio">
+						<div>Je souhaite recevoir un compte rendu des covoiturage 1h avant le début de mon évènement</div>
+						<label> <input type="radio" value="">OUI</label>
+						<label> <input type="radio" value="">NON</label>
+					</div>
+					<div class="form-group">
+						<label for="comment">Description de l'évènement</label>
+						<textarea class="form-control"  id="comment">Petite description de mon évènement</textarea>
+					</div>
+					<div class="progress">
+							<div class="progress-bar progress-bar-success active" role="progressbar"  style="width:80%">80%</div>
+					</div>
+					<button type="Submit" class="btn btn-primary btn-block">Submit</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
